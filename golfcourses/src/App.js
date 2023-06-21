@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './oof.jpg';
 import './App.css';
 
 function App() {
@@ -7,15 +7,24 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Your local golf buddy! 
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.golfnow.com/tee-times/hot-deals#promotedcampaignsonly=false&timemax=42&timemin=10&hotdealsonly=true&date=Jun+23+2023"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Golf Now
+        </a>
+        <br></br>
+        <a
+          className="App-link"
+          href="https://www.golfnow.com/tee-times/hot-deals#promotedcampaignsonly=false&timemax=42&timemin=10&hotdealsonly=true&date=Jun+23+2023"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         Search for local courses.
         </a>
       </header>
     </div>
