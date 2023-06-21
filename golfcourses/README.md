@@ -1,6 +1,3 @@
-# CourseBuddy
-Website displaying a variety of golf courses that allows users to make their own reviews. 
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
