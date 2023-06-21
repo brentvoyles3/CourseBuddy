@@ -48,7 +48,7 @@ class NavBar extends Component {
             // new and improved working NavBar
             <Navbar collapseOnSelect expand="lg" variant="dark" >
                 <Container>
-                    <Navbar.Brand href="/">StarU</Navbar.Brand>
+                    <Navbar.Brand href="/">CourseBuddy</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">
