@@ -1,34 +1,25 @@
-import logo from './oof.jpg';
 import './App.css';
+import React, { Component } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import LandingPage from './components/LandingPage/LandingPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Your local golf buddy! 
-        </p>
-        <a
-          className="App-link"
-          href="https://www.golfnow.com/tee-times/hot-deals#promotedcampaignsonly=false&timemax=42&timemin=10&hotdealsonly=true&date=Jun+23+2023"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Golf Now
-        </a>
-        <br></br>
-        <a
-          className="App-link"
-          href="https://www.golfnow.com/tee-times/hot-deals#promotedcampaignsonly=false&timemax=42&timemin=10&hotdealsonly=true&date=Jun+23+2023"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         Search for local courses.
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <>
+      <BrowserRouter basename='/'>
+        <Routes>
+          {/* Default Routes */}
+          <Route path="/" exact element={<LandingPage />} />
+        </Routes>
+      </BrowserRouter>
+      </>
+  )}
 }
 
 export default App;
