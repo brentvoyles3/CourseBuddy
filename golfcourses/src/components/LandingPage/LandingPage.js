@@ -48,12 +48,6 @@ class LandingPage extends Component {
 </form>
 </div>
                 </div>
-                <div className="footer">
-                <a href="https://www.golfnow.com">
-                    Book a tee time with our partners at GolfNow!
-                    </a>
-                    <br></br>
-                </div>
                 </div>
                 );
         }

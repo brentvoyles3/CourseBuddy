@@ -1,66 +1,43 @@
-import React, { Component } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
-import LoginButton from "../LoginButton/LoginButton";
+import React from "react";
 
-class NavBar extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isLoggedIn: false,
-        }
-        this.onLoginChange = this.onLoginChange.bind(this);
-        this.renderAuth = this.renderAuth.bind(this);
-        this.logout = this.logout.bind(this);
-    }
+const Navbar = () => {
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a className="navbar-brand" href="#">
+      CourseBuddy
+    </a>
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul className="navbar-nav">
+        <li className="nav-item active">
+          <a className="nav-link" href="#">
+            Signup <span className="sr-only"></span>
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">
+            Login
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">
+            Features
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  );
+};
 
-    componentDidMount() {
-        const isLoggedIn = (sessionStorage.getItem('session')) ? true : false;
-        this.setState({
-            isLoggedIn: isLoggedIn,
-        })
-    }
-    onLoginChange(e) {
-        this.setState({
-            isLoggedIn: e.target.value
-        })
-    }
-    renderAuth() {
-        const { isLoggedIn } = this.state;
-        if (isLoggedIn) {
-            return (
-                <>
-                    <Nav.Link href="/account">Account</Nav.Link>
-                    <Nav.Link href="/" onClick={this.logout}>Logout</Nav.Link>
-                </>
-
-            );
-        } else {
-            return (
-                <>
-                    <LoginButton />
-                </>
-            );
-        }
-    }
-    render() {
-        return (
-
-            // new and improved working NavBar
-            <Navbar collapseOnSelect expand="lg" variant="dark" >
-                <Container>
-                    <Navbar.Brand href="/">StarU</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ms-auto">
-                        <Nav.Link href="/search">Search</Nav.Link>
-                        <Nav.Link href="/about">About</Nav.Link>                          
-                        {this.renderAuth()}            
-                    </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        );
-    }
-}
-
-export default NavBar;
+export default Navbar;
