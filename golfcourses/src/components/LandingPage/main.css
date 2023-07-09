@@ -12,6 +12,7 @@
     padding: 20px;
     max-width: 100%;
 }
+
 .footer a:link {
 margin-top:15px;
 }
@@ -26,6 +27,7 @@ div.form
     display: block;
     text-align: center;
 }
+
 
 form
 {
@@ -84,7 +86,7 @@ h2 {
 
 body h2 {
     margin-top: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding-bottom: 20px;
     color: #0C1821;
     text-align: center;

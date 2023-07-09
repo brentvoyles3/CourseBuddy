@@ -36,12 +36,11 @@ class LandingPage extends Component {
                 </div>
                 <div classname="body">
                 <h2>
-                    Enter the zipcode of your destination to find top rated courses nearby!
+                    Enter the your destination zipcode to find top rated courses nearby!
                 </h2>
                 <div class="form">
                 <form classname="zipLanding" onSubmit={this.handleSubmit}>
   <label>
-    Zipcode: 
     <input type="text" value={this.state.value} onChange={this.handleChange} />
   </label>
   <input type="submit" value="Submit" />
