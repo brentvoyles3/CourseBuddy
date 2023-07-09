@@ -46,6 +46,7 @@ class LandingPage extends Component {
   <input type="submit" value="Submit" />
 </form>
 </div>
+
                 </div>
                 </div>
                 );
